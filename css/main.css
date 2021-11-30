@@ -85,6 +85,7 @@ a{
 main{
     grid-row-start: main;
     grid-row-end: footer;
+    
     display: grid;
     grid-template-rows:[start-main]700px[destacat1]650px[productes]auto[end-main];
 }
