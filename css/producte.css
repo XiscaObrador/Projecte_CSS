@@ -88,8 +88,10 @@ section{
 }
 .img img:nth-child(1){
     padding-top: 23px;
+    padding-bottom: 23px;
 }
 .img img:nth-child(6){
+    padding-top: 23px;
     padding-bottom: 23px;
 }
 .img img:nth-child(5){
