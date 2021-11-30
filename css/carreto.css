@@ -1,1 +1,105 @@
-@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap);.compra .total,.desc p{font-size:16px}.compra .gastos,.producte{border-bottom:2px solid #eee}*{padding:0;margin:0;box-sizing:border-box}body{width:100%;font-family:Quicksand,sans-serif}main{display:grid;grid-template-rows:[start-main]150px[producte]490px[compra]100px[end-main];width:80%;margin:auto}main p{color:rgb(97 96 96 / 71%)}main .percent,main h1,main p{margin:5px}.titol{grid-row-start:start-main;grid-row-end:producte}.percent{text-align:center;color:#f5f5f5;width:40%;background:repeating-linear-gradient(45deg,#96c9aa 20px,#96c9aa 40px,#70c590 40px,#70c590 60px)}.compra .gastos p:first-child,.compra .total p,.desc p{color:#000;font-weight:700}.productes{display:flex;flex-direction:column;grid-row-start:producte;grid-row-end:compra}.compra .total,.preu{justify-content:space-between;display:flex}.producte{display:flex;width:70%}.desc{margin-top:20px;width:55%}.desc div,.desc input{margin-top:10px}.color{display:flex}.color img{margin-left:20px}input[type=number]::-webkit-inner-spin-button{opacity:1}.desc input{width:79px;height:40px;padding:9px 9px 9px 26px;border:2px solid #eee}.compra{grid-row-start:compra;grid-row-end:end-main;width:70%}.compra .gastos{display:flex;justify-content:space-between}.compra .termes{display:flex;align-items:center}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 100%;
+        font-family: 'Quicksand', sans-serif;
+    }
+    main{
+        display: grid;
+        grid-template-rows:[start-main]150px[producte]490px[compra]100px[end-main];
+        width: 80%;
+        margin: auto;
+    }
+    main p{
+        color: rgb(97 96 96 / 71%);
+    }
+    main h1, main p, main .percent{
+        margin: 5px;
+    }
+    .titol{
+        grid-row-start: start-main;
+        grid-row-end: producte;
+    }
+    .percent{
+        text-align: center;
+        color: whitesmoke;
+        width: 40%;
+        background: repeating-linear-gradient(
+            45deg, rgb(150, 201, 170) 20px,rgb(150, 201, 170) 40px, rgb(112, 197, 144) 40px, rgb(112, 197, 144) 60px)
+    }
+    .productes{
+        display: flex;
+        flex-direction: column;
+        grid-row-start: producte;
+        grid-row-end: compra;
+    }
+    .producte{
+        display: flex;
+        border-bottom: 2px solid #eee ;
+        width: 70%;
+    }
+    .desc{
+        margin-top: 20px;
+        width: 55%;
+    }
+   .desc div{
+       margin-top: 10px;
+   }
+    .color{
+        display: flex;
+    }
+    .color img{
+        margin-left: 20px;
+    }
+    .preu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .desc p{
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    input[type=number]::-webkit-inner-spin-button {
+        opacity: 1
+    }
+    .desc input {
+        margin-top: 10px;
+        width: 79px;
+        height: 40px;
+        padding: 9px;
+        padding-left: 26px;
+        border: 2px solid #eee;
+      }
+    .compra{
+        grid-row-start: compra;
+        grid-row-end: end-main;
+        width: 70%;
+    }
+    .compra .total{
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+    .compra .total p{
+        color: black;
+        font-weight: bold;
+    }
+    .compra .gastos{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #eee ;
+    }
+    .compra .gastos p:first-child{
+        color: black;
+        font-weight: bold;
+    }
+    .compra .termes{
+        display: flex;
+        align-items: center;
+    }
