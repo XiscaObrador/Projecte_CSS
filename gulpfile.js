@@ -1,16 +1,9 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
 const cssmin = require('gulp-cssmin');
-const rename = require('gulp-rename');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
 
-gulp.task('default', function () {
-    gulp.src('src/**/*.css')
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist'));
-});
+
 function minCss(){
     return gulp.src('./css/**/*.css')
     .pipe(cssmin())

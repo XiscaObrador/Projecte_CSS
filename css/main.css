@@ -69,6 +69,9 @@ header .svg{
   align-items: center;
   order: 3;
 }
+.svg .cor{
+    display: none;
+}
 a{
     color: inherit;
 }
@@ -446,7 +449,9 @@ main{
        width: 10%;
        order: 3;
        flex-grow: initial;
-       
+    }
+    .svg .cor{
+        display: initial;
     }
     main{
         margin: 10px;
